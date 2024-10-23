@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalam&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playwrite GB S", serif;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.container {
+    height: 50vh;
+    width: 80vw;
+    max-width: 400px; 
+    max-height: 400px;
+    background: #FF6F61;
+    border-radius: 20px;
+    box-shadow: -1px -1px 15px 10px rgba(255, 111, 97, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upper {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.output {
+    height: 60%;
+    border-top: 2px solid white;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#btn {
+    padding: 10px 5px;
+    background-color: transparent;
+    border-color: white;
+    box-shadow: 6px 6px 10px rgba(181, 19, 4, 1);
+    cursor: pointer;
+    font-family: "Playwrite GB S", serif;
+    font-size: 1.2rem;
+    transition: all 0.3s ease; 
+}
+
+
+#btn:hover {
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        height: 60vh;
+        width: 90vw;
+        max-width: none; 
+        max-height: none;
+    }
+
+    .upper {
+        padding: 10%;
+        font-size: 1.2rem;
+    }
+
+    .output {
+        font-size: 1.5rem;
+        padding-top: 20px;
+    }
+
+    #btn {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        height: 50vh;
+        width: 85vw;
+    }
+
+    .upper {
+        padding: 7%;
+        font-size: 1.5rem;
+    }
+
+    .output {
+        font-size: 1.8rem;
+    }
+
+    #btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        max-height: 400px;
+        max-width: 400px;
+    }
+
+    .upper {
+        padding: 5%;
+    }
+
+    .output {
+        font-size: 2rem;
+    }
+
+    #btn {
+        font-size: 1.2rem;
+    }
+}
